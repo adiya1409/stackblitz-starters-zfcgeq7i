@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кадр-фотостудия                                                     </title>
+  <style>
+    body {
+    background: #F6F0E8;
+    color: #4B3A32;
+    }
+    
+    header, footer {
+    background: #E4D5C5;
+    color: #4B3A32;
+    }
+    
+    .hero {
+    background: #F6F0E8;
+    color: #4B3A32;
+    }
+    
+    .hero p, nav a, footer p {
+    color: #4B3A32;
+    }
+    
+    .card {
+    background: #E4D5C5;
+    color: #4B3A32;
+    }
+    
+    .card h3 {
+    color: #4B3A32;
+    }
+    * { box-sizing: border-box;
+    }                                                                                                   
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #191426;
+    }
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #d4a7ff;
+    }
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    .hero {
+      padding: 90px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #241139, #100e19);
+    }
+    h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      margin: 0 0 20px;
+    }
+    .hero p {
+      color: #d4c6df;
+      font-size: 19px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 15px 28px;
+      background: #a855f7;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .card {
+      padding: 28px 22px;
+      background: #211a30;
+      border: 1px solid #3b2a54;
+      border-radius: 18px;
+      transition: transform .2s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #a855f7;
+    }
+    .card span { font-size: 36px; }
+    .card h3 { color: #e1b8ff; }
+    .card p {
+      color: #c8c1d0;
+      line-height: 1.6;
+    }
+    .photo {
+      display: block;
+      width: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #191426;
+      color: #c8c1d0;
+    }
+    footer a {
+      color: #d4a7ff;
+      text-decoration: none;
+    }
+    @media (max-width: 900px) {
+      .services { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .services { grid-template-columns: 1fr; }
+      header { flex-direction: column; gap: 15px; }
+      nav a { margin: 0 8px; }
+      .hero { padding: 65px 20px; }
+    }
+
+  header, footer {
+background: #E4D5C5;
+}
+
+.hero {
+background: #F6F0E8;
+}
+
+.card {
+background: #E4D5C5;
+border-color: #A68A76;
+}
+
+.card h3, .logo, h1, h2 {
+color: #4B3A32;
+}
+
+.button {
+background: #A68A76;
+color: white;
+}
+
+nav a {
+color: #4B3A32;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">КАДР</div>
+  <nav>
+    <a href="#services">Услуги</a>
+    <a href="#gallery">Фото</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Фотостудия "кадр" </h1>
+  <p>Наща фотостудия-уютное место для фотосессий. Здесь есть красивые интерьеры, хорошее освещение и все необходимое для съемки.</p>
+  <a class="button" href="#services">Наши услуги</a>
+</div>
+
+<section id="services">
+  <h2>Наши услуги</h2>
+  <div class="services">
+
+    <div class="card">
+      <span>&#128247;</span>
+      <h3>Портретная съемка</h3>
+      <p>Красивые фотки с подходящим фоном.</p>
+    </div>
+
+    <div class="card">
+      <span>📸☘️</span>
+      <h3>Семейная фотооссесия</h3>
+      <p>Фотографий с семьей в уютной обстановке.</p>
+    </div>
+
+    <div class="card">
+      <span>✨</span>
+      <h3>аренда студий</h3>
+      <p>Уютный зал с  красивыми фонами.</p>
+    </div>
+
+    <div class="card">
+      <span>🔊</span>
+      <h3>Прокат оборудования</h3>
+      <p>Освещение, стенды с красивым фоном.</p>
+    </div>
+
+  </div>
+</section>
+<section id="gallery">
+  <h2>Наши фотографии</h2>
+  
+  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500" width="30%" alt="Портрет">
+  
+  <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=500" width="30%" alt="Семья">
+  
+  <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=500" width="30%" alt="Фотосъёмка">
+  </section>
+
+
+
+<footer id="contacts">
+  <h2>Свяжитесь с нами</h2>
+  <p>Почта:
+    <a href="mailto:hello@example.com">hello@example.com</a>
+  </p>
+  <p>© 2026 НОТА. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
